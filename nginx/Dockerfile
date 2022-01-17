@@ -10,8 +10,8 @@ COPY ./default.conf /etc/nginx/conf.d/
 # Add certificates and keys
 RUN mkdir -p /etc/certs
 
-COPY  localhost.crt /etc/certs
-COPY  localhost.key /etc/certs
+#localhost.crt /etc/certs
+#localhost.key /etc/certs
 
 # Expose the listening port
 EXPOSE 443
